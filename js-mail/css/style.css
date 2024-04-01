@@ -9,6 +9,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 input {
     height: 40px;
     width: 400px;
@@ -48,9 +52,17 @@ h1 {
 .btn {
     height: 50px;
     width: 100px;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
+
+.btn:active {
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+  }
 /* UTILITIES */
 .flex {
     display: flex;

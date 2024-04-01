@@ -16,6 +16,7 @@ btnInvia.addEventListener("click", function(){
             for (let j = 0; j < passwordList.length; j++) {
                 if (passwordList[j] === password.value) {
                     message = "Benvenuto " + emailList[i];
+                    window.location.href = "../js-dadi/index.html";
                     break;
                 } else {
                     message = "Password sbagliata "+ email.value;
