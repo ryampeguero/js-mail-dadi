@@ -26,4 +26,18 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 ### Gioco dei dadi :dice:
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-Stabilire il vincitore, in base a chi fa il punteggio più alto.
+Stabilire il winner, in base a chi fa il punteggio più alto.
+
+### Svolgimento Javascript
+1. Inizializzazione variabili
+    - [ ] Creare una variabile rndPc di tipo number dove inseriremo un numero interi random da 1 a 6 
+    - [ ] Creare una variabile rndUser di tipo number dove inseriremo un numero interi random da 1 a 6 
+    - [ ] Creare una variabile winner di tipo string
+
+2. Esecuzione logica:
+    - [ ] Confrontare le due variabili
+        - [ ] Se è maggiore i rndPc, inserire "Ha vinto il computer" in winner
+    - Altrimenti
+        inserire "Hai vinto" in winner
+
+    

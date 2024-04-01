@@ -12,8 +12,15 @@ let message = "Non sei registrato: " + email.value; //string
 btnInvia.addEventListener("click", function(){
     for (let i = 0; i < emailList.length; i++) {
         if(emailList[i] === email.value){
-            message = "Benvenuto " + emailList[i];
-            break;
+            // Controllo Password
+            for (let j = 0; j < passwordList.length; j++) {
+                if (passwordList[j] === password.value) {
+                    message = "Benvenuto " + emailList[i];
+                    break;
+                } else {
+                    message = "Password sbagliata "+ email.value;
+                }   
+            }
         }
         console.log(emailList[i]);
     }
