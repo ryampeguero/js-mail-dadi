@@ -12,8 +12,8 @@ gioca.addEventListener("click", function(){
 const rndPcId = document.getElementById("rndPc");
 const rndUserId = document.getElementById("rndUser");
 
-let rndPcJs = Math.floor(Math.random() * 5 ) + 1;
-let rndUserJs = Math.floor(Math.random() * 5 ) + 1;
+let rndPcJs = Math.floor(Math.random() * 6 ) + 1;
+let rndUserJs = Math.floor(Math.random() * 6 ) + 1;
 
 let winner = "";
 
