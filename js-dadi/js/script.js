@@ -1,11 +1,14 @@
 "use strict"
 const gioca = document.getElementById("gioca");
 const vincitore = document.getElementById("winner");
+const userName = prompt("Qual è il tuo nickname?");
 
+if (userName != null) {
+    document.getElementById("username").innerHTML = userName;
+}
 
 gioca.addEventListener("click", function(){
     //Inizializzazione variabili
-const userName = prompt("Qual è il tuo nickname?");
 const rndPcId = document.getElementById("rndPc");
 const rndUserId = document.getElementById("rndUser");
 
@@ -35,11 +38,7 @@ while (true){
 console.log("PC: ", rndPcJs);
 console.log("User: g", rndUserJs);
 rndPcId.innerHTML = `Dado: ${rndPcJs}`;
-
 rndUserId.innerHTML = `Dado: ${rndUserJs}`;
-if (userName != null) {
-    document.getElementById("username").innerHTML = userName;
-}
 
 vincitore.classList.remove("hidden");
 vincitore.innerHTML = `
